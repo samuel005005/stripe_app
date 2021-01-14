@@ -3,10 +3,12 @@ part of 'pagar_bloc.dart';
 @immutable
 abstract class PagarEvent {}
 
-class OnSelectCard extends PagarEvent {
-  final CreditCardCustom creditCard;
+class OnSeleccionarTarjeta extends PagarEvent {
 
-  OnSelectCard(this.creditCard);
+  final TarjetaCredito tarjeta;
+  OnSeleccionarTarjeta(this.tarjeta);
 }
 
-class OnDesabledCard extends PagarEvent {}
+class OnDesactivarTarjeta extends PagarEvent {}
+
+
